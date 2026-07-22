@@ -3,146 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitácora tecnología Durand</title>
-    <link rel="icon" href="recursos/img/LOGO_CAPOUILLIEZ - Isotipos (2)-08.png" type="image/png">
+    <title>Bitácora tecnología Andrade</title>
+    <link rel="icon" href="recursos/img/LC1.png" type="image/png">
     <style>
-        html, body {
+        html,body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction:   column;
+            text-align: center;
+        }
+        header{
+            padding: 20px;
+            background-color: rgb(208, 118, 163);
+        }
+        h1{
+            color: rgb(229, 160, 196);
+            margin: 0;
+            text-shadow: 0 0 5px #fff, 0 0 10px #f9d685, 0 0 20px #df6969, 0 0 40px #ff26de;
+        }
+        main{
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(79, 230, 19);
+            background-color: cadetblue;
+        }
+        @media(max-width:600px){
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+        html,body{
             height: 100%;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9; /* Un fondo gris muy claro para que las tarjetas resalten */
+            background-color: #f4f4f9;
         }
-
-        body {
+        body{
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-
-        header {
-            padding: 30px;
-            background-color: rgb(255, 172, 214);
+        header{
+            padding: 20px;
+            background-color: coral;
+            color: azure;
         }
-
-        /* --- Instrucción 1: Título con Sombra Morado Neón --- */
-        h1 {
-            color: white;
-            text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #bf00ff,
-                0 0 40px #bf00ff,
-                0 0 80px #bf00ff;
-            margin: 0;
-            font-size: 2.5rem;
+        h1{
+            text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe; 
         }
-
-        main {
-            flex: 1;
-            padding: 40px 20px;
-            max-width: 800px; /* Estrechamos un poco para que las tarjetas se vean mejor */
-            margin: 0 auto;
+        footer img{
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            max-width: 100%;
         }
-
-        /* --- El Reto: Clase .semana (Tarjeta Elegante) --- */
+        footer img:hover{
+            transform: scale(1.15); 
+        }
+        /* Clase .semana para Tarjetas Elegantes */
         .semana {
             background-color: white;
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
-            text-align: left; /* Texto alineado a la izquierda para mejor lectura */
-            border-left: 8px solid rgb(85, 15, 56); /* Detalle de color elegante */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave de profundidad */
-            transition: all 0.3s ease; /* Transición para el efecto hover */
+            text-align: left; /* Alineación para mejor lectura */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left: 8px solid rgb(208, 118, 163);
+            transition: transform 0.3s ease;
         }
 
         .semana:hover {
-            transform: translateY(-5px); /* Se eleva un poco */
-            box-shadow: 0 10px 25px rgba(191, 0, 255, 0.2); /* Sombra más fuerte y con tinte morado */
+            transform: scale(1.02); /* Pequeño salto al pasar el mouse */
         }
 
-        .semana h3 {
+        .semana h2 {
             margin-top: 0;
-            color: rgb(85, 15, 56);
-        }
-
-        footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            border-top: 2px solid rgb(85, 15, 56);
-            background-color: rgb(252, 142, 208);
-        }
-
-        /* --- Instrucción 2: Efecto Zoom en el Logo --- */
-        footer img {
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        footer img:hover {
-            transform: scale(1.15); /* Crece un 15% */
-        }
-
-        /* Responsividad para móviles */
-        @media(max-width:600px) {
-            footer {
-                flex-direction: column;
-                gap: 15px;
-                padding: 20px;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
+            color: #444;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Bitácora de Tecnología 2da y 3ra Unidad</h1>
-    </header>
+   <header>
+        <h1>Bitácora segunda y tercera unidad</h1>
+   </header>
 
     <main>
         <h4>Contenido de mi página web</h4>
 
         <div class="semana">
-            <h3>Semana 1: Introducción Arduino</h3>
-            <p>Hoy aprendimos nuevos conceptos y su importancia.</p>
-
-            <a href="recursos/Introducción Arduino Completo.pdf" class="boton-pdf" target="_blank"> <span style="margin-right: 8px;">📄</span> Ver Documento PDF </a>
-
+            <h2>Semana 1: Introducción</h2>
+            <p>Aprendimos los conceptos básicos del HTML y cómo llegas a estructurarlo en una página web, también usando etiqueta semánticas.</p>
+            <a href="recursos/Introducción Arduino SA 11B.pdf" class="boton-pdf" target="_blank">
+                <span style="margin-right: 8px;">📄</span> Ver Documento PDF
+            </a>
         </div>
 
         <div class="semana">
-            <h3>Semana 2: Estilos CSS</h3>
-            <p>Aprendí sobre el uso correcto del código CSS.</p>
+            <h2>Semana 2: Estilos CSS</h2>
+            <p>En esta clase aplicamos sombras, colores y efectos de transición para mejorar la vista del usuario.</p>
+            <video controls width="100%" style="border-radius: 10px; margin-top: 15px;">
+                <source src="recursos/Grabación 2026-05-12 115326.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
         </div>
 
+        <div class="semana">
+            <h2>Semana 3: 1er circuito (Parte A)</h2>
+            <p>Diseño y simulación del primer circuito automatizado interactivo utilizando la plataforma de desarrollo.</p>
+            <div class="contenedor-recurso">
+                <video src="ayuviiiii.mp4" width="100%" height="360px" controls style="border-radius: 10px;"></video>
+            </div>
+        </div>        
 
-   
-    <video width="100%" controls style="border-radius: 8px; margin-top: 15px;">
-        <source src="recursos/Semana2Tinkercard.mp4" type="video/mp4">
-        Tu navegador no soporta videos.
-    </video>
-</div></p>
+        <div class="semana">
+            <h2>Semana 4: 1er circuito (Parte B)</h2>
+            <p>Continuación del diseño, pruebas de errores y fase final del primer circuito interactivo.</p>
+            <div class="contenedor-recurso">
+                <video src="hoy.mp4" width="100%" height="360px" controls style="border-radius: 10px;"></video>
+            </div>
+        </div>
 
-    </div>
-<div class="semana">
-    <h2>Semana 3: LEDS RGB</h2>
-    <p>Este es el primer circuito que realizamos en físico y es el mismo de tinkercard </p>
+        <div class="semana">
+            <h2>Semana 5: Circuito Semáforo</h2>
+            <p>Diseño de un semáforo.</p>
+            <div class="contenedor-recurso">
+                <video src="07:07.mov" width="100%" height="360px" controls style="border-radius: 10px;"></video>
+            </div>
+        </div>
 
-    <video width="100%" controls>
-        <source src="recursos/semana3circuito.mov" type="video/mp4">
-        Tu navegador no soporta la reproducción de video.
-    </video>
-</div>
+        <div class="semana">
+            <h2>Semana 6 Sensor de distancia ultrasónico</h2>
+            <p>Diseño del sensor según su distancia</p>
+            <div class="contenedor-recurso">
+                <video src="circuito 20jul.mov" width="100%" height="360px" controls style="border-radius: 10px;"></video>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <span>2026 @ccecile</span>
-        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio" width="250px">
+        <span>2026 @heladitos</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo" width="200px" height="200px">
     </footer>
-
+</body>
+</html>
+</html>
 </body>
 </html>
