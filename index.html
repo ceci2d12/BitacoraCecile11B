@@ -12,6 +12,13 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f9f9f9; /* Un fondo gris muy claro para que las tarjetas resalten */
         }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
         header {
             padding: 30px;
             background-color: rgb(255, 172, 214);
@@ -35,7 +42,12 @@
             padding: 40px 20px;
             max-width: 800px; /* Estrechamos un poco para que las tarjetas se vean mejor */
             margin: 0 auto;
-        }            border-radius: 15px;
+        }
+
+        /* --- El Reto: Clase .semana (Tarjeta Elegante) --- */
+        .semana {
+            background-color: white;
+            border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
             text-align: left; /* Texto alineado a la izquierda para mejor lectura */
@@ -68,6 +80,32 @@
             transition: transform 0.3s ease;
             cursor: pointer;
         }
+
+        footer img:hover {
+            transform: scale(1.15); /* Crece un 15% */
+        }
+
+        /* Responsividad para móviles */
+        @media(max-width:600px) {
+            footer {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bitácora de Tecnología 2da y 3ra Unidad</h1>
+    </header>
+
+    <main>
+        <h4>Contenido de mi página web</h4>
 
         <div class="semana">
             <h3>Semana 1: Introducción Arduino</h3>
@@ -105,6 +143,6 @@
         <span>2026 @ccecile</span>
         <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio" width="250px">
     </footer>
-      
+
 </body>
 </html>
