@@ -6,111 +6,109 @@
     <title>Bitácora tecnología Durand</title>
     <link rel="icon" href="recursos/img/LC1.png" type="image/png">
     <style>
-        html,body{
+        html, body {
             height: 100%;
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-            background-color: #f9f9f9; /* Un fondo gris muy claro para que las tarjetas resalten */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff0f5; /* Fondo rosa pastel super claro */
         }
-        body{
+
+        body {
             display: flex;
-            flex-direction:   column;
+            flex-direction: column;
             text-align: center;
         }
-        header{
-            padding: 30px;
-            background-color: rgb(255, 172, 214);
+
+        /* Header con tono rosado */
+        header {
+            padding: 30px 20px;
+            background-color: #ff85c0; /* Fondo rosado principal */
+            box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
         }
-        h1{
-            color: white;
-            text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #bf00ff,
-                0 0 40px #bf00ff,
-                0 0 80px #bf00ff;
-            margin: 0;
+
+        /* Título con luces neón y borde rosado */
+        h1 {
+            color: #ffffff;
             font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #ffb6c1,
+                0 0 20px #ff1493,
+                0 0 40px #ff1493,
+                0 0 60px #ff1493;
+            -webkit-text-stroke: 1px #e60073; /* Define un borde rosado oscuro alrededor de las letras */
         }
-        main{
-             flex: 1;
+
+        main {
+            flex: 1;
             padding: 40px 20px;
-            max-width: 800px; /* Estrechamos un poco para que las tarjetas se vean mejor */
+            max-width: 800px;
             margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
         }
-        footer{
+
+        /* Tarjetas o Fichas */
+        .semana {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            text-align: left;
+            border-left: 8px solid #ff4d94; /* Borde lateral rosado fucsia */
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 20, 147, 0.25); /* Sombra rosada interactiva */
+        }
+
+        .semana h2, .semana h3 {
+            margin-top: 0;
+            color: #d6006e; /* Texto de los títulos internos en rosa fuerte */
+        }
+
+        /* Footer */
+        footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 50px;
-            border-top: 2px solid rgb(85, 15, 56);
-            background-color: rgb(252, 142, 208);
+            border-top: 3px solid #ff4d94;
+            background-color: #ffb3d9;
         }
-         @media(max-width:600px) {
+
+        footer img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        footer img:hover {
+            transform: scale(1.15);
+        }
+
+        @media(max-width: 600px) {
             footer {
                 flex-direction: column;
                 gap: 15px;
                 padding: 20px;
             }
         }
-        html,body{
-            height: 100%;
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-        }
-        body{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        header{
-            padding: 20px;
-            background-color: coral;
-            color: azure;
-        }
-        h1{
-            text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe; 
-        }
-        footer img{
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        footer img:hover{
-             transform: scale(1.15); /* Crece un 15% */
-        }
-        /* Clase .semana para Tarjetas Elegantes */
-        .semana {
-             background-color: white;
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 25px;
-            text-align: left; /* Texto alineado a la izquierda para mejor lectura */
-            border-left: 8px solid rgb(85, 15, 56); /* Detalle de color elegante */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave de profundidad */
-            transition: all 0.3s ease; /* Transición para el efecto hover */
-        }
-
-        .semana:hover {
-             transform: translateY(-5px); /* Se eleva un poco */
-            box-shadow: 0 10px 25px rgba(191, 0, 255, 0.2); /* Sombra más fuerte y con tinte morado */
-
-        .semana h3 {
-            margin-top: 0;
-            color: rgb(85, 15, 56);
-        }
     </style>
 </head>
 <body>
-   <header>
+    <header>
         <h1>Bitácora de Tecnología 2da y 3ra Unidad</h1>
-   </header>
+    </header>
 
     <main>
         <h4>Contenido de mi página web</h4>
 
         <div class="semana">
-             <h3>Semana 1: Introducción Arduino</h3>
+            <h3>Semana 1: Introducción Arduino</h3>
             <p>Hoy aprendimos nuevos conceptos y su importancia.</p>
             <a href="Introducción Arduino Completo.pdf" class="boton-pdf" target="_blank">
                 <span style="margin-right: 8px;">📄</span> Ver Documento PDF
@@ -118,7 +116,7 @@
         </div>
 
         <div class="semana">
-             <h3>Semana 2: Estilos CSS</h3>
+            <h3>Semana 2: Estilos CSS</h3>
             <p>Aprendí sobre el uso correcto del código CSS.</p>
             <video controls width="100%" style="border-radius: 10px; margin-top: 15px;">
                 <source src="Semana2Tinkercard.mp4" type="video/mp4">
@@ -151,10 +149,18 @@
         </div>
 
         <div class="semana">
-            <h2>Semana 6 Sensor de distancia ultrasónico</h2>
-            <p>Diseño del sensor según su distancia</p>
+            <h2>Semana 6: Sensor de distancia ultrasónico</h2>
+            <p>Diseño del sensor según su distancia.</p>
             <div class="contenedor-recurso">
-                <video src="Tics Cécile Durand - Tinkercad -.mp4" width="100%" height="360px" controls style="border-radius: 10px;"></video>
+                <video src="Tics Cécile Durand - Tinkercad -.mp4" width="100%" height="360px" controls style="border-radius: 10px;"></video>
+            </div>
+        </div>
+
+        <div class="semana">
+            <h2>Semana 7: Sensor ultrasónico (parte 2) 7</h2>
+            <p>Diseño de un sensor según ultrasónico.</p>
+            <div class="contenedor-recurso">
+                <video src="semana 7.mp4" width="100%" height="360px" controls style="border-radius: 10px;"></video>
             </div>
         </div>
     </main>
@@ -165,6 +171,4 @@
     </footer>
 </body>
 </html>
-</html>
-</body>
 </html>
