@@ -22,28 +22,32 @@
             background-color: rgb(255, 172, 214);
         }
         h1{
-            color: rgb(229, 160, 196);
+            color: white;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #bf00ff,
+                0 0 40px #bf00ff,
+                0 0 80px #bf00ff;
             margin: 0;
-            text-shadow: 0 0 5px #fff, 0 0 10px #f9d685, 0 0 20px #df6969, 0 0 40px #ff26de;
+            font-size: 2.5rem;
         }
         main{
-            flex: 1;
+             flex: 1;
             padding: 40px 20px;
-            max-width: 1200px;
+            max-width: 800px; /* Estrechamos un poco para que las tarjetas se vean mejor */
             margin: 0 auto;
-            width: 100%;
-            box-sizing: border-box;
         }
         footer{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 50px;
-            border-top: 1px solid rgb(79, 230, 19);
-            background-color: cadetblue;
+            border-top: 2px solid rgb(85, 15, 56);
+            background-color: rgb(252, 142, 208);
         }
-        @media(max-width:600px){
-            footer{
+         @media(max-width:600px) {
+            footer {
                 flex-direction: column;
                 gap: 15px;
                 padding: 20px;
@@ -69,55 +73,55 @@
             text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe; 
         }
         footer img{
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            max-width: 100%;
+            transition: transform 0.3s ease;
+            cursor: pointer;
         }
         footer img:hover{
-            transform: scale(1.15); 
+             transform: scale(1.15); /* Crece un 15% */
         }
         /* Clase .semana para Tarjetas Elegantes */
         .semana {
-            background-color: white;
+             background-color: white;
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 25px;
-            text-align: left; /* Alineación para mejor lectura */
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            border-left: 8px solid rgb(208, 118, 163);
-            transition: transform 0.3s ease;
+            text-align: left; /* Texto alineado a la izquierda para mejor lectura */
+            border-left: 8px solid rgb(85, 15, 56); /* Detalle de color elegante */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave de profundidad */
+            transition: all 0.3s ease; /* Transición para el efecto hover */
         }
 
         .semana:hover {
-            transform: scale(1.02); /* Pequeño salto al pasar el mouse */
-        }
+             transform: translateY(-5px); /* Se eleva un poco */
+            box-shadow: 0 10px 25px rgba(191, 0, 255, 0.2); /* Sombra más fuerte y con tinte morado */
 
-        .semana h2 {
+        .semana h3 {
             margin-top: 0;
-            color: #444;
+            color: rgb(85, 15, 56);
         }
     </style>
 </head>
 <body>
    <header>
-        <h1>Bitácora segunda y tercera unidad</h1>
+        <h1>Bitácora de Tecnología 2da y 3ra Unidad</h1>
    </header>
 
     <main>
         <h4>Contenido de mi página web</h4>
 
         <div class="semana">
-            <h2>Semana 1: Introducción</h2>
-            <p>Aprendimos los conceptos básicos del HTML y cómo llegas a estructurarlo en una página web, también usando etiqueta semánticas.</p>
-            <a href="recursos/Introducción Arduino SA 11B.pdf" class="boton-pdf" target="_blank">
+             <h3>Semana 1: Introducción Arduino</h3>
+            <p>Hoy aprendimos nuevos conceptos y su importancia.</p>
+            <a href="Introducción Arduino Completo.pdf" class="boton-pdf" target="_blank">
                 <span style="margin-right: 8px;">📄</span> Ver Documento PDF
             </a>
         </div>
 
         <div class="semana">
-            <h2>Semana 2: Estilos CSS</h2>
-            <p>En esta clase aplicamos sombras, colores y efectos de transición para mejorar la vista del usuario.</p>
+             <h3>Semana 2: Estilos CSS</h3>
+            <p>Aprendí sobre el uso correcto del código CSS.</p>
             <video controls width="100%" style="border-radius: 10px; margin-top: 15px;">
-                <source src="recursos/Grabación 2026-05-12 115326.mp4" type="video/mp4">
+                <source src="Semana2Tinkercard.mp4" type="video/mp4">
                 Tu navegador no soporta videos HTML5.
             </video>
         </div>
