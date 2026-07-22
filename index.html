@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora tecnología Durand</title>
+    <link rel="icon" href="recursos/img/LOGO_CAPOUILLIEZ - Isotipos (2)-08.png" type="image/png">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9; /* Un fondo gris muy claro para que las tarjetas resalten */
+        }
+        header {
+            padding: 30px;
+            background-color: rgb(255, 172, 214);
+        }
+
+        /* --- Instrucción 1: Título con Sombra Morado Neón --- */
+        h1 {
+            color: white;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #bf00ff,
+                0 0 40px #bf00ff,
+                0 0 80px #bf00ff;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 800px; /* Estrechamos un poco para que las tarjetas se vean mejor */
+            margin: 0 auto;
+        }            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            text-align: left; /* Texto alineado a la izquierda para mejor lectura */
+            border-left: 8px solid rgb(85, 15, 56); /* Detalle de color elegante */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave de profundidad */
+            transition: all 0.3s ease; /* Transición para el efecto hover */
+        }
+
+        .semana:hover {
+            transform: translateY(-5px); /* Se eleva un poco */
+            box-shadow: 0 10px 25px rgba(191, 0, 255, 0.2); /* Sombra más fuerte y con tinte morado */
+        }
+
+        .semana h3 {
+            margin-top: 0;
+            color: rgb(85, 15, 56);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 2px solid rgb(85, 15, 56);
+            background-color: rgb(252, 142, 208);
+        }
+
+        /* --- Instrucción 2: Efecto Zoom en el Logo --- */
+        footer img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        <div class="semana">
+            <h3>Semana 1: Introducción Arduino</h3>
+            <p>Hoy aprendimos nuevos conceptos y su importancia.</p>
+
+            <a href="recursos/Introducción Arduino Completo.pdf" class="boton-pdf" target="_blank"> <span style="margin-right: 8px;">📄</span> Ver Documento PDF </a>
+
+        </div>
+
+        <div class="semana">
+            <h3>Semana 2: Estilos CSS</h3>
+            <p>Aprendí sobre el uso correcto del código CSS.</p>
+        </div>
+
+
+   
+    <video width="100%" controls style="border-radius: 8px; margin-top: 15px;">
+        <source src="recursos/Semana2Tinkercard.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+</div></p>
+
+    </div>
+<div class="semana">
+    <h2>Semana 3: LEDS RGB</h2>
+    <p>Este es el primer circuito que realizamos en físico y es el mismo de tinkercard </p>
+
+    <video width="100%" controls>
+        <source src="recursos/semana3circuito.mov" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+</div>
+
+    <footer>
+        <span>2026 @ccecile</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" alt="Logo Colegio" width="250px">
+    </footer>
+      
+</body>
+</html>
